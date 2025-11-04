@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "name": "Emscripten",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/Users/sher.jesse/emsdk/upstream/emscripten/system/include",
+        "/Users/sher.jesse/emsdk/upstream/emscripten/system/include/SDL",
+        "/Users/sher.jesse/emsdk/upstream/emscripten/system/include/emscripten"
+      ],
+    }
+  ],
+  "version": 4
+}
