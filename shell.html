@@ -55,6 +55,8 @@
     </head>
     <body>
         <button id="add">ADD 1+1!</button>
+        <h1 id="text_to_change">THIS TEXT HAS !NOT! BEEN SET BY C++ YET</h1>
+        <button id="set">SET TEXT</button>
         <script>
             var Module = {
                 onRuntimeInitialized: function () {
@@ -63,6 +65,11 @@
                     let add_btn = document.getElementById('add');
                     add_btn.addEventListener('click', () => {
                         alert(Module.add(1, 1));
+                    });
+
+                    let set_btn = document.getElementById('set');
+                    set_btn.addEventListener('click', () => {
+                        Module.SetText();
                     });
                 },
                 print: (function() {
