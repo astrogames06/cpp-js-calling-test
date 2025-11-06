@@ -10,6 +10,7 @@
     <meta name="description" content="New raylib web videogame, developed using raylib videogames library">
     <meta name="keywords" content="raylib, games, html5, programming, C, C++, library, learn, videogames">
     <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="shell.css">
 
     <!-- Open Graph metatags for sharing -->
     <meta property="og:title" content="raylib web game">
@@ -57,6 +58,7 @@
         <button id="add">ADD 1+1!</button>
         <h1 id="text_to_change">THIS TEXT HAS !NOT! BEEN SET BY C++ YET</h1>
         <button id="set">SET TEXT</button>
+        <button id="setredbtn">SET RED</button>
         <script>
             var Module = {
                 onRuntimeInitialized: function () {
@@ -70,6 +72,11 @@
                     let set_btn = document.getElementById('set');
                     set_btn.addEventListener('click', () => {
                         Module.SetText();
+                    });
+
+                    let red_btn = document.getElementById('setredbtn');
+                    red_btn.addEventListener('click', () => {
+                        Module.SetRed();
                     });
                 },
                 print: (function() {
